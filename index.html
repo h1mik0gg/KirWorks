@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KirWorks | Сайт веб-разработчика</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="image/logo.svg" alt="KirWorks" class="nav-logo">
+                <span>KirWorks</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">О себе</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#portfolio" class="nav-link">Работы</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Привет, меня зовут Кир, и я <span class="gradient-text">веб-разработчик</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Ты попал на мой личный сайт - KirWorks. Тут ты сможешь узнать немного обо мне и моих навыках, посмотреть мои работы, а также связаться со мной.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Мои работы</a>
+                        <a href="#contact" class="btn btn-secondary">Связаться</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="image/logo.svg" alt="KirWorks Logo" class="hero-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О себе</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Я веб-разработчик с опытом создания современных веб-приложений. 
+                        Специализируюсь на разработке пользовательских интерфейсов и 
+                        полнофункциональных веб-приложений.
+                    </p>
+                    <p class="about-description">
+                        Моя цель — создавать не просто красивые сайты, а эффективные 
+                        инструменты, которые помогают бизнесу расти и развиваться. 
+                        Каждый проект для меня — это возможность создать что-то уникальное 
+                        и полезное.
+                    </p>
+                    <div class="about-achievements">
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <img src="image/десятки проектов.png" alt="Десятки проектов">
+                            </div>
+                            <div class="achievement-content">
+                                <div class="achievement-title">Десятки проектов</div>
+                                <div class="achievement-description">Реализовано множество интересных решений</div>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <img src="image/стань первым клиентом.png" alt="Стань первым клиентом">
+                            </div>
+                            <div class="achievement-content">
+                                <div class="achievement-title">Стань первым клиентом</div>
+                                <div class="achievement-description">Открыт для новых проектов и сотрудничества</div>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <img src="image/2 года опыта.png" alt="2 года опыта">
+                            </div>
+                            <div class="achievement-content">
+                                <div class="achievement-title">2 года опыта</div>
+                                <div class="achievement-description">На данный момент, но десятки в будущем</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="image/foto2.jpg" alt="Кир" class="about-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Навыки</h2>
+            <div class="skills-content">
+                <div class="skill-section">
+                    <div class="skill-section-header">
+                        <div class="skill-section-icon">
+                            <img src="image/дизайн.png" alt="Дизайн">
+                        </div>
+                        <h3 class="skill-section-title">Дизайн</h3>
+                    </div>
+                    <p class="skill-section-description">
+                        Могу работать в любых графических редакторах и создавать любой дизайн. 
+                        От простых логотипов до сложных интерфейсов — всё под силу.
+                    </p>
+                </div>
+                <div class="skill-section">
+                    <div class="skill-section-header">
+                        <div class="skill-section-icon">
+                            <img src="image/вёрстка и разработка.png" alt="Вёрстка и разработка">
+                        </div>
+                        <h3 class="skill-section-title">Вёрстка и разработка</h3>
+                    </div>
+                    <p class="skill-section-description">
+                        На данный момент владею полным пониманием фронтенд разработки и использую такие языки как 
+                        <strong>HTML5</strong>, <strong>CSS3</strong>, а также <strong>JavaScript</strong>. 
+                        В будущем смогу также выполнять бэкенд разработку, привязывать базы данных, и делать всё, 
+                        что потребует клиент.
+                    </p>
+                    <div class="skill-tech-stack">
+                        <div class="tech-item">
+                            <span class="tech-name">HTML5</span>
+                            <div class="tech-bar">
+                                <div class="tech-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">CSS3</span>
+                            <div class="tech-bar">
+                                <div class="tech-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">JavaScript</span>
+                            <div class="tech-bar">
+                                <div class="tech-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Примеры работ</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image1">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Baratrum - такси и каршеринг</h3>
+                            <p class="portfolio-description">Полный Frontend сайта предоставляющего услуги такси и каршеринг</p>
+                            <div class="portfolio-tags">
+                                <span>Html+Css</span>
+                                <span>JavaScript</span>
+                                <span>Json</span>
+                            </div>
+                            <a href="Baratrum final/home.html">Посмотреть →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image2">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Velocity Club - сеть ПК клубов</h3>
+                            <p class="portfolio-description">Подробный дизайн сайта для сети компьютерных клубов</p>
+                            <div class="portfolio-tags">
+                                <span>Html</span>
+                                <span>Css</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="https://h1mik0gg.github.io/Velocity-Club/">Посмотреть →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Кружки и секции МОАУ СОШ №11</h3>
+                            <p class="portfolio-description">Современный дизайн школьного сайта</p>
+                            <div class="portfolio-tags">
+                                <span>Html+Css</span>
+                                <span>JavaScript</span>
+                                <span>Json</span>
+                            </div>
+                            <a href="https://h1mik0gg.github.io/-11/">Посмотреть →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image4">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">MindFlow - блог саморазвития</h3>
+                            <p class="portfolio-description">Сайт в виде личного блога о саморазвитии</p>
+                            <div class="portfolio-tags">
+                                <span>Html</span>
+                                <span>Css</span>
+                            </div>
+                            <a href="https://h1mik0gg.github.io/MindFlow/">Посмотреть →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image5">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Уютное кафе - кафе с верандой</h3>
+                            <p class="portfolio-description">Одностраничный сайт для кафе</p>
+                            <div class="portfolio-tags">
+                                <span>Html</span>
+                                <span>Css</span>
+                            </div>
+                            <a href="https://h1mik0gg.github.io/-/">Посмотреть →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image6">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Название проекта</h3>
+                            <p class="portfolio-description">Описание проекта</p>
+                            <div class="portfolio-tags">
+                                <span>Язык</span>
+                                <span>Язык</span>
+                                <span>Язык</span>
+                            </div>
+                            <a href="https://h1mik0gg.github.io/KirWorks/">Посмотреть →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Связаться со мной</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">Давайте работать вместе!</h3>
+                    <p class="contact-description">
+                        Готов обсудить ваш проект и предложить оптимальное решение. 
+                        Свяжитесь со мной любым удобным способом.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:svivs_dzn@mail.ru" class="contact-method">
+                            <div class="contact-icon">
+                                <img src="image/email.png" alt="Email">
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">svivs_dzn@mail.ru</div>
+                            </div>
+                        </a>
+                        <a href="https://t.me/kirusha_vey" class="contact-method" target="_blank">
+                            <div class="contact-icon">
+                                <img src="image/telegram.png" alt="Telegram">
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Telegram</div>
+                                <div class="contact-value">@kirusha_vey</div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/h1mik0gg" class="contact-method" target="_blank">
+                            <div class="contact-icon">
+                                <img src="image/GitHub.png" alt="GitHub">
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">GitHub</div>
+                                <div class="contact-value">github.com/h1mik0gg</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-section">
+                        <h4 class="order-title">Заказать проект</h4>
+                        <p class="order-description">
+                            Заполните форму или напишите напрямую в мессенджер для быстрого ответа
+                        </p>
+                        <a href="https://t.me/kirusha_vey" class="btn btn-primary" target="_blank">
+                            Заказать в Telegram
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 KirWorks. Все права защищены.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/h1mik0gg" class="social-link" aria-label="GitHub" target="_blank">
+                        <img src="image/GitHub.png" alt="GitHub">
+                    </a>
+                    <a href="https://t.me/kirusha_vey" class="social-link" aria-label="Telegram" target="_blank">
+                        <img src="image/telegram.png" alt="Telegram">
+                    </a>
+                    <a href="mailto:svivs_dzn@mail.ru" class="social-link" aria-label="Email">
+                        <img src="image/email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
