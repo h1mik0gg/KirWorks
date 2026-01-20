@@ -121,14 +121,14 @@ if (contactForm) {
             const result = await response.json();
 
             if (result.ok) {
-                alert("✅ Заявка отправлена! Я скоро отвечу 😎");
+                showToast("Сообщение отправлено! Я скоро отвечу 😎", "success");
                 contactForm.reset();
             } else {
-                alert("❌ Ошибка отправки");
+                showToast("Ошибка отправки. Попробуй позже", "error");
             }
         } catch (error) {
             console.error(error);
-            alert("❌ Сервер недоступен");
+            showToast("Сервер недоступен. Попробуй позже", "error");
         }
     });
 }
@@ -206,3 +206,4 @@ function showToast(message, type = "success") {
         setTimeout(() => toast.remove(), 300);
     }, 3000);
 }
+
