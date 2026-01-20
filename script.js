@@ -184,3 +184,25 @@ window.addEventListener('load', () => {
     }, 100);
 
 });
+
+function showToast(message, type = "success") {
+    const toastContainer = document.getElementById("toast");
+
+    const toast = document.createElement("div");
+    toast.className = `toast ${type}`;
+
+    toast.innerHTML = `
+        <span class="toast-icon">
+            ${type === "success" ? "✅" : "❌"}
+        </span>
+        <span>${message}</span>
+    `;
+
+    toastContainer.appendChild(toast);
+
+    setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transform = "translateY(20px)";
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
