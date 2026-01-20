@@ -95,55 +95,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const contactForm = document.getElementById('contactForm');
 
-const BOT_TOKEN = "8468684643:AAEo0gr5nYrd8Rga38r0zt3YW0yXukajndA";
-const CHAT_ID = "6357901595";
+const WORKER_URL = "https://kirworks-form.svivs-dzn.workers.dev"; // <-- СЮДА СВОЙ URL
 
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const telegram = document.getElementById('telegram').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
-
-        const text =
-`📩 Новая заявка с сайта KirWorks
-
-👤 Имя: ${name}
-📧 Email: ${email}
-📨 Telegram: ${telegram}
-📝 Тема: ${subject}
-
-💬 Сообщение:
-${message}`;
+        const data = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            telegram: document.getElementById('telegram').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value,
+        };
 
         try {
-            const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            const response = await fetch(WORKER_URL, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({
-                    chat_id: CHAT_ID,
-                    text: text
-                })
+                body: JSON.stringify(data)
             });
 
             const result = await response.json();
-            console.log(result);
 
             if (result.ok) {
-                alert("✅ Сообщение отправлено!");
+                alert("✅ Заявка отправлена! Я скоро отвечу 😎");
                 contactForm.reset();
             } else {
-                alert("❌ Telegram отклонил сообщение");
+                alert("❌ Ошибка отправки");
             }
-
         } catch (error) {
             console.error(error);
-            alert("❌ Ошибка соединения");
+            alert("❌ Сервер недоступен");
         }
     });
 }
@@ -197,4 +182,5 @@ window.addEventListener('load', () => {
         document.body.style.transition = 'opacity 0.5s ease';
         document.body.style.opacity = '1';
     }, 100);
+
 });
